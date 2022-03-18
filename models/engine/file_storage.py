@@ -68,3 +68,9 @@ class FileStorage:
         elif obj in self.__objects.values():
             objk = obj.__class__.__name__ + "." + obj.id
             self.__objects.pop(objk, None)
+
+    def close(self):
+        """
+        Deserializes the JSON file to objects.
+        """
+        self.reload()
