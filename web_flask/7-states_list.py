@@ -17,6 +17,7 @@ def states_list():
     allstate = storage.all(State)
     return render_template('7-states_list.html', allstate=allstate)
 
+
 @app.teardown_appcontext
 def teardown(done):
     """

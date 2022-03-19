@@ -17,6 +17,7 @@ def cities_by_states():
     allstate = storage.all(State)
     return render_template('8-cities_by_states.html', allstate=allstate)
 
+
 @app.teardown_appcontext
 def teardown(done):
     """

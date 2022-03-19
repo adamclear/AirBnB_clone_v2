@@ -13,12 +13,14 @@ def hello():
     """
     return "Hello HBNB!"
 
+
 @app.route("/hbnb", strict_slashes=False)
 def hbnb():
     """
     Displays "HBNB"
     """
     return "HBNB"
+
 
 @app.route("/c/<text>", strict_slashes=False)
 def c(text):
@@ -27,6 +29,7 @@ def c(text):
     underscores replaced with whitespace.
     """
     return "C {}".format(text.replace('_', ' '))
+
 
 @app.route("/python", strict_slashes=False)
 @app.route("/python/<text>", strict_slashes=False)
@@ -37,6 +40,7 @@ def python(text='is cool'):
     underscores replaced with whitespace.
     """
     return "Python {}".format(text.replace('_', ' '))
+
 
 @app.route("/number/<int:n>", strict_slashes=False)
 def number(n):

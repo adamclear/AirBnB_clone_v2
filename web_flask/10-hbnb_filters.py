@@ -21,6 +21,7 @@ def hbnb_list():
     return render_template('10-hbnb_filters.html', allstate=allstate,
                            amenities=amenities)
 
+
 @app.teardown_appcontext
 def teardown(done):
     """

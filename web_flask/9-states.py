@@ -22,6 +22,7 @@ def states(id=None):
     return render_template('9-states.html', allstates=allstates,
                            this_state=this_state)
 
+
 @app.teardown_appcontext
 def teardown(done):
     """
