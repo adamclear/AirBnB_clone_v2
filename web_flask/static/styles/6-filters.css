@@ -48,6 +48,10 @@
 	padding-left: 15px;
 }
 
+.locations .popover {
+	z-index: 3;
+}
+
 .locations:hover .popover {
 	display: inline-block;
 }
